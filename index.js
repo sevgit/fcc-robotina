@@ -25,7 +25,7 @@ bot.on('message', function(user, userID, channelID, message, event) {
     if (message.indexOf('!help') != -1) {
         bot.sendMessage({
             to: channelID,
-            message: "Todavía no me enseñaron nada =("
+            message: "Todavía no me enseñaron nada =( :robot: beep boop :robot:"
         });
     }
 });

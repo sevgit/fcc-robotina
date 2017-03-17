@@ -1,5 +1,3 @@
-var express = require('express')
-var app = express()
 var Discord = require('discord.io');
 var bot = new Discord.Client({
     autorun: true,

@@ -1,4 +1,4 @@
-var Discord = require('discord.io');
+var Discord = require('./node_modules/discord.io');
 var bot = new Discord.Client({
     autorun: true,
     token: "MjUzNTcyNjgwNjYwMjg3NDg5.CyCfAA.12c7GJ7PCeEgt_XYRDDlVdB6b0g"

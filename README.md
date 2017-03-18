@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sloppiers-heroku-discord-bot
 
 A barebones Node.js bot using [discord.js](https://github.com/hydrabolt/discord.js/).
@@ -35,3 +36,7 @@ For more information about using Node.js on Heroku, see these Dev Center article
 - [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+=======
+# fcc-robotina
+A simple bot for discord
+>>>>>>> 6aa5f3bbe5ad741de6575b4a22ba10bd456c3287

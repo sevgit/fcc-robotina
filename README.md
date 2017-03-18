@@ -1,3 +1,3 @@
 # fcc-robotina
-A simple bot for discord
+Robotina es un bot utilitario para el canal de FCC Montevideo, creado a partir de *discord.js* y el wrapper *discord.io*
 

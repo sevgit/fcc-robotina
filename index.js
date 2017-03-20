@@ -13,7 +13,7 @@ bot.on('ready', function(event) {
 
 
 bot.on('message', function(user, userID, channelID, message, event) {
-    if (message.indexOf('!placeholder') != -1) {
+    if (message.indexOf('!placeholder') != -1 && user != bot.username) {
 
         var arguments = message.split(" ");
 

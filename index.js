@@ -13,17 +13,10 @@ bot.on('ready', function(event) {
 
 
 bot.on('message', function(user, userID, channelID, message, event) {
-    if (message.indexOf('!placeholder') != -1) {
-        bot.sendMessage({
-            to: channelID,
-            message: frases[Math.floor(Math.random()*frases.length)]
-        });
-    }
-});
-
-bot.on('message', function(user, userID, channelID, message, event) {
     if (message.indexOf('!help') != -1) {
+
         var arguments = message.split();
+
         if (arguments.length !=3) {
             bot.sendMessage({
             to: channelID,
@@ -36,6 +29,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
             message: "http://placekitten.com/" arguments[1] + '/' + arguments[2]
             });
         }
+    }
+});
+
+bot.on('message', function(user, userID, channelID, message, event) {
         bot.sendMessage({
             to: channelID,
             message: "Todavía no me enseñaron nada =( :robot: beep boop :robot:"

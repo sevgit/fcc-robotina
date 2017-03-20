@@ -26,16 +26,19 @@ bot.on('message', function(user, userID, channelID, message, event) {
         else {
             bot.sendMessage({
             to: channelID,
-            message: "http://placekitten.com/" + arguments[1] + '/' + arguments[2]
+            message: "http://placekitten.com/" + arguments[1] + "/" + arguments[2]
             });
         }
     }
 });
 
 bot.on('message', function(user, userID, channelID, message, event) {
+    if (message.indexOf('!help') != -1) {
         bot.sendMessage({
             to: channelID,
             message: "Todavía no me enseñaron nada =( :robot: beep boop :robot:"
         });
     }
 });
+
+

@@ -13,9 +13,9 @@ bot.on('ready', function(event) {
 
 
 bot.on('message', function(user, userID, channelID, message, event) {
-    if (message.indexOf('!help') != -1) {
+    if (message.indexOf('!placeholder') != -1) {
 
-        var arguments = message.split();
+        var arguments = message.split(" ");
 
         if (arguments.length !=3) {
             bot.sendMessage({

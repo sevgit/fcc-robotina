@@ -1,25 +1,19 @@
 {
-  "version": "0.2.0",
-  "description": "A sample Node.js app using Express 4",
+  "version": "0.1.0",
+  "description": "Discord Bot for freeCodeCamp Montevideo",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "ajax-request": "^1.2.1",
-    "discord.js": "^7.0.1",
-    "express": "^4.13.3",
-    "get-json": "0.0.3",
-    "jquery": "^2.2.4",
-    "discord.io": "2.5"
+    "discord.io": "^2.5.1"
   },
   "engines": {
     "node": "4.0.0"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "discord",
+    "bot"
   ],
   "license": "MIT"
 }

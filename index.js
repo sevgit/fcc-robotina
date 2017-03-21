@@ -1,7 +1,6 @@
 var Discord = require('discord.io');
 var bot = new Discord.Client({
     autorun: true,
-  
     token: "MjUzNTcyNjgwNjYwMjg3NDg5.CyCfAA.12c7GJ7PCeEgt_XYRDDlVdB6b0g"
 });
 
@@ -13,7 +12,6 @@ bot.on('ready', function(event) {
 
 
 bot.on('message', function(user, userID, channelID, message, event) {
-
     if (message.split(" ")[0] === "!placeholder" && user != bot.username) {
 
         var arguments = message.split(" ");
@@ -36,22 +34,6 @@ bot.on('message', function(user, userID, channelID, message, event) {
             to: channelID,
             message: "```md\n#Comandos disponibles:\n```\n **!placeholder [ancho < 0] [alto < 0]:** linkea a un placeholder con dichas medidas\n **!info:** información general de Robotina"
         });
-    if (message.indexOf('!placeholder') != -1 && user != bot.username) {
-
-        var arguments = message.split(" ");
-
-        if (arguments.length !=3) {
-            bot.sendMessage({
-            to: channelID,
-            message: "`Modo de uso: !placeholder <ancho> <alto>`"
-            });
-        }
-        else {
-            bot.sendMessage({
-            to: channelID,
-            message: "http://placekitten.com/" + arguments[1] + "/" + arguments[2]
-            });
-        }
     }
 
     if (message === "!info") {
@@ -63,3 +45,6 @@ bot.on('message', function(user, userID, channelID, message, event) {
     }
 
 });
+
+
+
